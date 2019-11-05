@@ -8,7 +8,6 @@ Make a Full fake REST API, MakePOST, PUT, PATCH or DELETE requests, Fake Registe
 Run `git clone https://github.com/Abdelrahman-haridy/ngx-mocks.git` for clone a repo. Then run `npm i` on project path after install all packages run `npm start`.Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 Use `http://localhost:3000/` for check Defualt API's by [getpostman](https://www.getpostman.com/). Also You can check defualt API's in `server/api.json` path.
 
-
 ## Custom API's
 
 Edit `api.json` as your app requirments. Example
