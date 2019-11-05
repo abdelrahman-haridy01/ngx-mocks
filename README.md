@@ -1,27 +1,82 @@
 # NgxMocks
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.17.
+Best way to get a full fake REST API.
+Make a Full fake REST API, MakePOST, PUT, PATCH or DELETE requests, Fake Register and login Api with jwt.
 
-## Development server
+## How to use it?
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `git clone https://github.com/Abdelrahman-haridy/ngx-mocks.git` for clone a repo. Then run `npm i` on project path after install all packages run `npm start`.Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Use `http://localhost:3000/` for check Defualt API's by [getpostman](https://www.getpostman.com/). Also You can check defualt API's in `server/api.json` path.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Custom API's
 
-## Build
+Edit `api.json` as your app requirments. Example
+```json
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Abhar",
+            "email": "Abdelrahman.haridy01@gmail.com",
+            "password": "123456a"
+        },
+        {
+            "id": 2,
+            "name": "Abdelrahman",
+            "email": "Abdelrahman@abharworks.com",
+            "password": "123456b"
+        }
+    ],
+    "notes": [
+        {
+            "id": 1,
+            "title": "text title",
+            "description": "exp desc text",
+            "userId": 1
+        },
+        {
+            "id": 2,
+            "title": "text title2",
+            "description": "exp desc text3",
+            "userId": 1
+        },
+        {
+            "id": 3,
+            "title": "text title3",
+            "description": "exp desc text3",
+            "userId": 2
+        }
+    ],
+    "about": {
+        "title": "About",
+        "description": "exp abour text"
+    }
+}
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## API's Example
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+```
+POST   /auth/login      --> email, password
+POST   /auth/register   --> name, email, password
+GET    /users
+GET    /notes/1
+GET    /users/1/notes
+POST   /notes
+PUT    /notes/1
+PATCH  /notes/1
+DELETE /notes/1
+```
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+To get more help on the Angular go check out the [Angular](https://angular.io/).
+To get more help on the JWT go check out the [JWT](https://jwt.io/).
+To get more help on the Bootstrap go check out the [Bootstrap](https://getbootstrap.com/).
+To get more help on json-server go check out the [json-server README](https://github.com/typicode/json-server/blob/master/README.md).
+
+## Author
+
+Abdelrahman Haridy - [AbharWorks](http://abharworks.com/)
+

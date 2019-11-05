@@ -1,0 +1,40 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Abhar",
+            "email": "Abdelrahman.haridy01@gmail.com",
+            "password": "123456a"
+        },
+        {
+            "id": 2,
+            "name": "Abdelrahman",
+            "email": "Abdelrahman@email.com",
+            "password": "123456b"
+        }
+    ],
+    "notes": [
+        {
+            "id": 1,
+            "title": "text title",
+            "description": "exp desc text",
+            "userId": 1
+        },
+        {
+            "id": 2,
+            "title": "text title2",
+            "description": "exp desc text3",
+            "userId": 1
+        },
+        {
+            "id": 3,
+            "title": "text title3",
+            "description": "exp desc text3",
+            "userId": 2
+        }
+    ],
+    "about": {
+        "title": "About",
+        "description": "exp abour text"
+    }
+}
